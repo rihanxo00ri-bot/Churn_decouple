@@ -1,0 +1,747 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Predict customer churn using machine learning. Analyze customer profiles and identify potential customer retention risks."
+    >
+
+    <title>ChurnIQ | Customer Intelligence Platform</title>
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="/" class="brand" aria-label="ChurnIQ Home">
+                <span class="brand-icon">C</span>
+                <span class="brand-name">ChurnIQ</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#prediction">Prediction</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <a href="#prediction" class="nav-cta">
+                Get Started
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section class="hero-section" id="overview">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="eyebrow">
+                        CUSTOMER INTELLIGENCE PLATFORM
+                    </span>
+
+                    <h1>
+                        Understand Your Customers.
+                        <span>Predict Their Next Move.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Turn customer data into actionable insights.
+                        Identify potential churn risks using machine
+                        learning and make smarter retention decisions.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#prediction" class="primary-button">
+                            Start Prediction
+                        </a>
+
+                        <a href="#about" class="secondary-button">
+                            Learn More
+                        </a>
+
+                    </div>
+
+                </div>
+
+               <div class="hero-visual">
+
+    <div class="visual-glow"></div>
+
+    <div class="visual-label">
+        <span class="status-dot"></span>
+        AI ANALYTICS ENGINE
+    </div>
+
+    <svg
+        class="hero-path"
+        viewBox="0 0 600 400"
+        fill="none"
+        aria-hidden="true"
+    >
+        <path
+            id="analytics-path"
+            d="M 30 300
+               C 110 300, 100 170, 190 200
+               S 290 320, 360 160
+               S 470 50, 570 90"
+            stroke="url(#path-gradient)"
+            stroke-width="4"
+            stroke-linecap="round"
+        />
+
+        <defs>
+            <linearGradient
+                id="path-gradient"
+                x1="30"
+                y1="300"
+                x2="570"
+                y2="90"
+                gradientUnits="userSpaceOnUse"
+            >
+                <stop stop-color="#fb7185"/>
+                <stop offset=".4" stop-color="#86efac"/>
+                <stop offset=".7" stop-color="#60a5fa"/>
+                <stop offset="1" stop-color="#e879f9"/>
+            </linearGradient>
+        </defs>
+
+        <circle class="path-dot" r="8" fill="#60a5fa"/>
+    </svg>
+
+    <div class="visual-stat stat-one">
+        <span>Prediction Engine</span>
+        <strong>AI Powered</strong>
+    </div>
+
+    <div class="visual-stat stat-two">
+        <span>Customer Insights</span>
+        <strong>Real-time Analysis</strong>
+    </div>
+
+</div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= PLATFORM OVERVIEW ================= -->
+
+        <section class="overview-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        PLATFORM OVERVIEW
+                    </span>
+
+                    <h2>
+                        Data-driven customer intelligence
+                    </h2>
+
+                    <p>
+                        Analyze customer behavior and understand
+                        the factors that influence customer retention.
+                    </p>
+
+                </div>
+
+                <div class="overview-grid">
+
+                    <article class="overview-card">
+
+                        <h3>Customer Analysis</h3>
+
+                        <p>
+                            Analyze customer demographics, subscriptions
+                            and service usage.
+                        </p>
+
+                    </article>
+
+                    <article class="overview-card">
+
+                        <h3>Churn Prediction</h3>
+
+                        <p>
+                            Use trained machine learning models to
+                            estimate customer churn probability.
+                        </p>
+
+                    </article>
+
+                    <article class="overview-card">
+
+                        <h3>Business Insights</h3>
+
+                        <p>
+                            Identify potential retention risks and
+                            support data-driven business decisions.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PREDICTION WORKSPACE ================= -->
+
+        <section class="prediction-section" id="prediction">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        MACHINE LEARNING WORKSPACE
+                    </span>
+
+                    <h2>
+                        Customer Churn Prediction
+                    </h2>
+
+                    <p>
+                        Enter the customer information below to
+                        generate a churn prediction.
+                    </p>
+
+                </div>
+
+
+                <div class="prediction-layout">
+
+                    <div class="form-container">
+
+                        <form id="churn-form">
+
+                            <!-- PERSONAL INFORMATION -->
+
+                            <fieldset class="form-section">
+
+                                <legend>Personal Information</legend>
+
+                                <div class="form-grid">
+
+                                    <label for="gender">
+                                        Gender
+
+                                        <select id="gender" name="gender">
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </label>
+
+
+                                    <label for="senior-citizen">
+                                        Senior Citizen
+
+                                        <select
+                                            id="senior-citizen"
+                                            name="SeniorCitizen"
+                                            data-type="int"
+                                        >
+                                            <option value="0">No</option>
+                                            <option value="1">Yes</option>
+                                        </select>
+                                    </label>
+
+
+                                    <label for="partner">
+                                        Partner
+
+                                        <select id="partner" name="Partner">
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </label>
+
+
+                                    <label for="dependents">
+                                        Dependents
+
+                                        <select id="dependents" name="Dependents">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+
+                            <!-- ACCOUNT INFORMATION -->
+
+                            <fieldset class="form-section">
+
+                                <legend>Account Information</legend>
+
+                                <div class="form-grid">
+
+                                    <label for="tenure">
+                                        Tenure (Months)
+
+                                        <input
+                                            type="number"
+                                            id="tenure"
+                                            name="tenure"
+                                            value="12"
+                                            min="0"
+                                            required
+                                        >
+                                    </label>
+
+
+                                    <label for="contract">
+                                        Contract
+
+                                        <select id="contract" name="Contract">
+                                            <option value="Month-to-month">
+                                                Month-to-month
+                                            </option>
+
+                                            <option value="One year">
+                                                One year
+                                            </option>
+
+                                            <option value="Two year">
+                                                Two year
+                                            </option>
+                                        </select>
+                                    </label>
+
+
+                                    <label for="paperless-billing">
+                                        Paperless Billing
+
+                                        <select
+                                            id="paperless-billing"
+                                            name="PaperlessBilling"
+                                        >
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+
+                            <!-- PHONE SERVICES -->
+
+                            <fieldset class="form-section">
+
+                                <legend>Phone Services</legend>
+
+                                <div class="form-grid">
+
+                                    <label for="phone-service">
+                                        Phone Service
+
+                                        <select
+                                            id="phone-service"
+                                            name="PhoneService"
+                                        >
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </label>
+
+
+                                    <label for="multiple-lines">
+                                        Multiple Lines
+
+                                        <select
+                                            id="multiple-lines"
+                                            name="MultipleLines"
+                                        >
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No phone service">
+                                                No phone service
+                                            </option>
+                                        </select>
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+
+                            <!-- INTERNET SERVICES -->
+
+                            <fieldset class="form-section">
+
+                                <legend>Internet Services</legend>
+
+                                <div class="form-grid">
+
+                                    <label for="internet-service">
+                                        Internet Service
+
+                                        <select
+                                            id="internet-service"
+                                            name="InternetService"
+                                        >
+                                            <option value="Fiber optic">
+                                                Fiber optic
+                                            </option>
+
+                                            <option value="DSL">DSL</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </label>
+
+
+                                    <label for="online-security">
+                                        Online Security
+
+                                        <select
+                                            id="online-security"
+                                            name="OnlineSecurity"
+                                        >
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No internet service">
+                                                No internet service
+                                            </option>
+                                        </select>
+                                    </label>
+
+
+                                    <label for="online-backup">
+                                        Online Backup
+
+                                        <select
+                                            id="online-backup"
+                                            name="OnlineBackup"
+                                        >
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No internet service">
+                                                No internet service
+                                            </option>
+                                        </select>
+                                    </label>
+
+
+                                    <label for="device-protection">
+                                        Device Protection
+
+                                        <select
+                                            id="device-protection"
+                                            name="DeviceProtection"
+                                        >
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No internet service">
+                                                No internet service
+                                            </option>
+                                        </select>
+                                    </label>
+
+
+                                    <label for="tech-support">
+                                        Tech Support
+
+                                        <select
+                                            id="tech-support"
+                                            name="TechSupport"
+                                        >
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No internet service">
+                                                No internet service
+                                            </option>
+                                        </select>
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+
+                            <!-- ENTERTAINMENT SERVICES -->
+
+                            <fieldset class="form-section">
+
+                                <legend>Entertainment Services</legend>
+
+                                <div class="form-grid">
+
+                                    <label for="streaming-tv">
+                                        Streaming TV
+
+                                        <select
+                                            id="streaming-tv"
+                                            name="StreamingTV"
+                                        >
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No internet service">
+                                                No internet service
+                                            </option>
+                                        </select>
+                                    </label>
+
+
+                                    <label for="streaming-movies">
+                                        Streaming Movies
+
+                                        <select
+                                            id="streaming-movies"
+                                            name="StreamingMovies"
+                                        >
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No internet service">
+                                                No internet service
+                                            </option>
+                                        </select>
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+
+                            <!-- BILLING INFORMATION -->
+
+                            <fieldset class="form-section">
+
+                                <legend>Billing Information</legend>
+
+                                <div class="form-grid">
+
+                                    <label for="payment-method">
+                                        Payment Method
+
+                                        <select
+                                            id="payment-method"
+                                            name="PaymentMethod"
+                                        >
+                                            <option value="Electronic check">
+                                                Electronic check
+                                            </option>
+
+                                            <option value="Mailed check">
+                                                Mailed check
+                                            </option>
+
+                                            <option value="Bank transfer (automatic)">
+                                                Bank transfer (automatic)
+                                            </option>
+
+                                            <option value="Credit card (automatic)">
+                                                Credit card (automatic)
+                                            </option>
+                                        </select>
+                                    </label>
+
+
+                                    <label for="monthly-charges">
+                                        Monthly Charges ($)
+
+                                        <input
+                                            type="number"
+                                            id="monthly-charges"
+                                            name="MonthlyCharges"
+                                            value="75.50"
+                                            min="0.01"
+                                            step="0.01"
+                                            required
+                                        >
+                                    </label>
+
+
+                                    <label for="total-charges">
+                                        Total Charges ($)
+
+                                        <input
+                                            type="number"
+                                            id="total-charges"
+                                            name="TotalCharges"
+                                            value="906.00"
+                                            min="0"
+                                            step="0.01"
+                                            required
+                                        >
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+
+                            <!-- FORM ACTION -->
+
+                            <div class="form-actions">
+
+                                <p>
+                                    Review the customer information
+                                    before submitting.
+                                </p>
+
+                                <button
+                                    type="submit"
+                                    id="submit-btn"
+                                >
+                                    Predict Churn
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- ================= PREDICTION RESULT ================= -->
+
+                    <aside class="result-container" aria-labelledby="result-title">
+
+                        <div class="result-header">
+
+                            <span class="eyebrow">
+                                ANALYSIS OUTPUT
+                            </span>
+
+                            <h3 id="result-title">
+                                Prediction Results
+                            </h3>
+
+                        </div>
+
+
+                        <div
+                            id="result-box"
+                            class="result-box"
+                            aria-live="polite"
+                            aria-atomic="true"
+                        >
+                            <p>
+                                Your prediction results will appear here
+                                after submitting customer information.
+                            </p>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        ABOUT THE TECHNOLOGY
+                    </span>
+
+                    <h2>
+                        Machine Learning Meets Business Intelligence
+                    </h2>
+
+                    <p>
+                        This platform connects a dedicated frontend
+                        interface with a FastAPI backend to process
+                        customer information and generate predictions
+                        using trained machine learning models.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="/" class="brand">
+                    <span class="brand-icon">C</span>
+                    <span class="brand-name">ChurnIQ</span>
+                </a>
+
+                <p>
+                    Turning customer data into intelligent decisions.
+                </p>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 ChurnIQ. All rights reserved.
+                </p>
+
+                <p>
+                    Powered by Machine Learning & FastAPI
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/MotionPathPlugin.min.js"></script>
+
+
+<!-- Your JavaScript -->
+<script src="script1.js" defer></script>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
